@@ -1,9 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 import React, { useState } from "react";
 import Counter from "./components/Counter";
 import Hello from "./components/Hello";
+
+import SampleUseEffect from "./components/SampleUseEffect";
+import MyTimer from "./components/Timer";
+import CountResult from "./components/CountResult";
+import CallbackCounter from "./components/CallbackCounter";
 
 const INITIAL_COUNT = 0;
 const INITIAL_NAME = "JS";
@@ -34,6 +38,11 @@ function App() {
         handleChangeName={handleChangeName}
         initialName={INITIAL_NAME}
       />
+
+      <SampleUseEffect />
+      <MyTimer />
+      <CountResult />
+      <CallbackCounter />
     </>
   );
 }
