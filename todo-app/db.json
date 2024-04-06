@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "content": "Install Create React App",
+      "done": true
+    },
+    {
+      "id": 2,
+      "content": "Create tentative API of JSON server",
+      "done": true
+    },
+    {
+      "id": 3,
+      "content": "Install Chakra UI",
+      "done": false
+    }
+  ]
+}
