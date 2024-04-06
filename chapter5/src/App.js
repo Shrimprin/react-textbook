@@ -8,6 +8,17 @@ import SampleUseEffect from "./components/SampleUseEffect";
 import MyTimer from "./components/Timer";
 import CountResult from "./components/CountResult";
 import CallbackCounter from "./components/CallbackCounter";
+import UseRefSample from "./components/UseRefSample";
+import UseRefSample2 from "./components/UseRefSample2";
+import ContextSample from "./components/ContextSample";
+
+// context_sample
+import { TextProvider } from "./context_sample/TextProvider";
+import { First } from "./context_sample/First";
+
+// count context
+import { CountProvider } from "./countContext/CountProvider";
+import { FirstChild } from "./countContext/FirstChild";
 
 const INITIAL_COUNT = 0;
 const INITIAL_NAME = "JS";
@@ -43,6 +54,17 @@ function App() {
       <MyTimer />
       <CountResult />
       <CallbackCounter />
+      <UseRefSample />
+      <UseRefSample2 />
+      <ContextSample />
+
+      <TextProvider>
+        <First />
+      </TextProvider>
+
+      <CountProvider>
+        <FirstChild></FirstChild>
+      </CountProvider>
     </>
   );
 }
