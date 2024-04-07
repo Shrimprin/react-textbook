@@ -1,5 +1,8 @@
 import React, { useRef } from "react";
 
+import { Container } from "@chakra-ui/react";
+import { AddIcon } from "@chakra-ui/icons";
+
 import TodoTitle from "./TodoTitle";
 import TodoList from "./TodoList";
 import TodoAdd from "./TodoAdd";
@@ -31,26 +34,37 @@ export default function App() {
   });
 
   return (
-    <>
-      <TodoTitle title="Todo App" as="h1" />
+    <Container centerContent p={{ base: "4", md: "6" }} maxWidth="3xl">
+      <TodoTitle
+        title="Todo App"
+        as="h1"
+        fontSize={{ base: "2xl", md: "3xl" }}
+      />
       <TodoAdd
+        placeholder="ADD TODO"
+        leftIcon={<AddIcon />}
+        buttonText="Add Todo"
         inputEl={inputEl}
         handleAddTodoListItem={handleAddTodoListItem}
       />
 
-      <TodoTitle title="Doing List" as="h2" />
       <TodoList
         todoList={inCompletedList}
         toggleTodoListItemStatus={toggleTodoListItemStatus}
         deleteTodoListItem={deleteTodoListItem}
+        title="Doing List"
+        as="h2"
+        fontSize={{ base: "xl", md: "2xl" }}
       />
 
-      <TodoTitle title="Done List" as="h2" />
       <TodoList
         todoList={completedList}
         toggleTodoListItemStatus={toggleTodoListItemStatus}
         deleteTodoListItem={deleteTodoListItem}
+        title="Done List"
+        as="h2"
+        fontSize={{ base: "xl", md: "2xl" }}
       />
-    </>
+    </Container>
   );
 }
