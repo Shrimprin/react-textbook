@@ -1,19 +1,9 @@
 {
   "todos": [
     {
-      "id": 1,
-      "content": "Install Create React App",
+      "id": "bd6ce0b5-6504-43ec-8146-cbb2f38d84a0",
+      "content": "あああ",
       "done": true
-    },
-    {
-      "id": 2,
-      "content": "Create tentative API of JSON server",
-      "done": false
-    },
-    {
-      "id": 3,
-      "content": "Install Chakra UI",
-      "done": false
     }
   ]
 }
